@@ -22,7 +22,7 @@ public class JSONRunner {
 		JSONParser parser = new JSONParser();
 		JSONObject json=(JSONObject)parser.parse(new FileReader(new File(path)));
 		String parallelSuites = (String)json.get("parallelsuites");
-		TestNGRunner testNG = new TestNGRunner(Integer.parseInt(parallelSuites));
+		TestNGRunner testNG = new TestNGRunner(Integer.parseInt(parallelSuites));//
 		JSONArray testSuites = (JSONArray)json.get("testsuites");
 		
 		for(int sId=0;sId<testSuites.size();sId++) {

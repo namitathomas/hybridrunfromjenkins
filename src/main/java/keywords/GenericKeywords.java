@@ -84,6 +84,32 @@ public class GenericKeywords {
 		
 	}
 	
+	//function to open browser
+	public void openfirefoxbrowser(){
+
+	/*System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+	System.out.println("1111");
+	driver=new ChromeDriver();
+	System.out.println("222");
+
+	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	System.out.println("333");
+
+	driver.manage().window().maximize();
+	System.out.println("444");
+	*/
+
+	log("Starting: Openfirefoxbrowser_under GenericKeyword Class");
+	//gecko
+	System.setProperty("webdriver.gecko.driver","D:\\SELENIUM\\gecko driver\\geckodriver.exe");
+
+	//No Logs needed
+	System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
+
+	driver =new FirefoxDriver();
+	System.out.println("opening browser");
+	}
+	
 	public void navigate(String urlKey) {
 		log("Navigating to "+ urlKey);
 		driver.get(envProp.getProperty(urlKey));

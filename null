@@ -1,0 +1,7 @@
+1632221915008	geckodriver	INFO	Listening on 127.0.0.1:28359
+1632221917220	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1632221918292	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1632221924495	Marionette	INFO	Listening on port 49287
+1632221958393	Marionette	INFO	Stopped listening on port 65324
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]

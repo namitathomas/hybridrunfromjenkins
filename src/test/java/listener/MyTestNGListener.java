@@ -1,5 +1,6 @@
 package listener;
 
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -29,5 +30,7 @@ public class MyTestNGListener implements ITestListener{
 		ExtentTest test = (ExtentTest)result.getTestContext().getAttribute("test");
 		test.log(Status.SKIP, result.getName()+" -  Test Skipped");
 	}
+
+	
 
 }

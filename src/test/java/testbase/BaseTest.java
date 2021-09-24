@@ -78,7 +78,7 @@ public class BaseTest {
 		// init and share it with all tests
         ds = new DriverScript();// 1 app keyword object for entire test -All @Test
 		ds.setReport(test);
-        ds.defaultLogin("Chrome");
+        ds.defaultLogin();
 		ds.setTestData(data);
 		ds.setTestContext(context);
 		context.setAttribute("driver", ds);

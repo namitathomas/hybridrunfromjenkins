@@ -1,50 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" ignored="12" total="22" passed="5">
+<testng-results skipped="10" failed="0" ignored="12" total="22" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Stock Suite" duration-ms="91396" started-at="2021-03-13T11:52:41 IST" finished-at="2021-03-13T11:54:12 IST">
+  <suite name="Stock Suite" duration-ms="17400" started-at="2021-09-21T16:28:31 IST" finished-at="2021-09-21T16:28:48 IST">
     <groups>
     </groups>
-    <test name="Add New Stock-New Stock-It.1" duration-ms="91170" started-at="2021-03-13T11:52:41 IST" finished-at="2021-03-13T11:54:12 IST">
+    <test name="Add New Stock-New Stock-It.1" duration-ms="16832" started-at="2021-09-21T16:28:31 IST" finished-at="2021-09-21T16:28:47 IST">
       <class name="testcases.rediff.PortfolioManagement">
-        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5ddf0d24]" name="beforeTest" is-config="true" duration-ms="27014" started-at="2021-03-13T11:52:41 IST" finished-at="2021-03-13T11:53:08 IST">
+        <test-method status="FAIL" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@405b2a2]" name="beforeTest" is-config="true" duration-ms="14306" started-at="2021-09-21T16:28:31 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:189)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:177)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+at keywords.GenericKeywords.openfirefoxbrowser(GenericKeywords.java:109)
+at driver.DriverScript.defaultLogin(DriverScript.java:87)
+at testbase.BaseTest.beforeTest(BaseTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at runner.TestNGRunner.run(TestNGRunner.java:86)
+at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5ddf0d24]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-13T11:53:08 IST" finished-at="2021-03-13T11:53:08 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@405b2a2]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectPortFolio(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5ddf0d24]" name="selectPortFolio" duration-ms="1650" started-at="2021-03-13T11:53:08 IST" finished-at="2021-03-13T11:53:09 IST">
+        <test-method status="SKIP" signature="selectPortFolio(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@405b2a2]" name="selectPortFolio" duration-ms="0" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:189)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:177)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+at keywords.GenericKeywords.openfirefoxbrowser(GenericKeywords.java:109)
+at driver.DriverScript.defaultLogin(DriverScript.java:87)
+at testbase.BaseTest.beforeTest(BaseTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at runner.TestNGRunner.run(TestNGRunner.java:86)
+at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPortFolio -->
-        <test-method status="PASS" signature="quit(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5ddf0d24]" name="quit" is-config="true" duration-ms="1085" started-at="2021-03-13T11:54:11 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="PASS" signature="quit(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@405b2a2]" name="quit" is-config="true" duration-ms="2332" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:47 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
@@ -53,55 +239,241 @@
         </test-method> <!-- quit -->
       </class> <!-- testcases.rediff.PortfolioManagement -->
       <class name="testcases.rediff.StockManagement">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-03-13T11:53:09 IST" finished-at="2021-03-13T11:53:09 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addNewStock(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="addNewStock" duration-ms="7448" started-at="2021-03-13T11:53:09 IST" finished-at="2021-03-13T11:53:17 IST">
+        <test-method status="SKIP" signature="addNewStock(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="addNewStock" duration-ms="0" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:189)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:177)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+at keywords.GenericKeywords.openfirefoxbrowser(GenericKeywords.java:109)
+at driver.DriverScript.defaultLogin(DriverScript.java:87)
+at testbase.BaseTest.beforeTest(BaseTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at runner.TestNGRunner.run(TestNGRunner.java:86)
+at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewStock -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-03-13T11:53:17 IST" finished-at="2021-03-13T11:53:17 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="beforeMethod" is-config="true" duration-ms="50" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyStockPresent()[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="verifyStockPresent" duration-ms="397" started-at="2021-03-13T11:53:17 IST" finished-at="2021-03-13T11:53:17 IST">
+        <test-method status="SKIP" signature="verifyStockPresent()[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="verifyStockPresent" duration-ms="0" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:189)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:177)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+at keywords.GenericKeywords.openfirefoxbrowser(GenericKeywords.java:109)
+at driver.DriverScript.defaultLogin(DriverScript.java:87)
+at testbase.BaseTest.beforeTest(BaseTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at runner.TestNGRunner.run(TestNGRunner.java:86)
+at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStockPresent -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-03-13T11:53:17 IST" finished-at="2021-03-13T11:53:17 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyStockQuantity(java.lang.String, org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="verifyStockQuantity" duration-ms="53490" started-at="2021-03-13T11:53:17 IST" finished-at="2021-03-13T11:54:11 IST">
+        <test-method status="SKIP" signature="verifyStockQuantity(java.lang.String, org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="verifyStockQuantity" duration-ms="0" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
@@ -110,25 +482,118 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:189)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:177)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+at keywords.GenericKeywords.openfirefoxbrowser(GenericKeywords.java:109)
+at driver.DriverScript.defaultLogin(DriverScript.java:87)
+at testbase.BaseTest.beforeTest(BaseTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at runner.TestNGRunner.run(TestNGRunner.java:86)
+at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStockQuantity -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-03-13T11:54:11 IST" finished-at="2021-03-13T11:54:11 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e3315d9]]>
+                <![CDATA[org.testng.TestRunner@45b93298]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyTransactionHistory(java.lang.String)[pri:0, instance:testcases.rediff.StockManagement@5d066c7d]" name="verifyTransactionHistory" duration-ms="0" started-at="2021-03-13T11:54:11 IST" finished-at="2021-03-13T11:54:11 IST">
+        <test-method status="SKIP" signature="verifyTransactionHistory(java.lang.String)[pri:0, instance:testcases.rediff.StockManagement@4f56bcc3]" name="verifyTransactionHistory" duration-ms="0" started-at="2021-09-21T16:28:45 IST" finished-at="2021-09-21T16:28:45 IST">
           <params>
             <param index="0">
               <value>
@@ -136,18 +601,111 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: newSession
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-8VGDR4U', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - <no info>
+   1:           0x4bdcc9 - <no info>
+   2:           0x43dc4d - <no info>
+   3:           0x44db84 - <no info>
+   4:           0x44a1ca - <no info>
+   5:           0x4207bc - <no info>
+   6:           0x405e47 - <no info>
+   7:           0x6db3d9 - <no info>
+   8:           0x417847 - <no info>
+   9:           0x6d56d3 - <no info>
+  10:     0x7ffa509e7034 - BaseThreadInitThunk
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:189)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:177)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+at keywords.GenericKeywords.openfirefoxbrowser(GenericKeywords.java:109)
+at driver.DriverScript.defaultLogin(DriverScript.java:87)
+at testbase.BaseTest.beforeTest(BaseTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at runner.TestNGRunner.run(TestNGRunner.java:86)
+at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTransactionHistory -->
       </class> <!-- testcases.rediff.StockManagement -->
     </test> <!-- Add New Stock-New Stock-It.1 -->
-    <test name="Add New Stock-New Stock-It.2" duration-ms="144" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+    <test name="Add New Stock-New Stock-It.2" duration-ms="221" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
       <class name="testcases.rediff.PortfolioManagement">
-        <test-method status="SKIP" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@34c01041]" name="beforeTest" is-config="true" duration-ms="98" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="SKIP" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5a0ea64b]" name="beforeTest" is-config="true" duration-ms="190" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4099209b]]>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
               </value>
             </param>
           </params>
@@ -159,46 +717,55 @@
               <![CDATA[org.testng.SkipException: Skpping as Data Runmode is N
 at testbase.BaseTest.beforeTest(BaseTest.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
 at runner.TestNGRunner.run(TestNGRunner.java:86)
 at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@34c01041]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5a0ea64b]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4099209b]]>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="selectPortFolio(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@34c01041]" name="selectPortFolio" duration-ms="0" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="SKIP" signature="selectPortFolio(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5a0ea64b]" name="selectPortFolio" duration-ms="0" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skpping as Data Runmode is N]]>
@@ -207,39 +774,41 @@ at runner.JSONRunner.main(JSONRunner.java:108)
               <![CDATA[org.testng.SkipException: Skpping as Data Runmode is N
 at testbase.BaseTest.beforeTest(BaseTest.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
 at runner.TestNGRunner.run(TestNGRunner.java:86)
 at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPortFolio -->
-        <test-method status="PASS" signature="quit(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@34c01041]" name="quit" is-config="true" duration-ms="32" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="PASS" signature="quit(org.testng.ITestContext)[pri:0, instance:testcases.rediff.PortfolioManagement@5a0ea64b]" name="quit" is-config="true" duration-ms="13" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4099209b]]>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
               </value>
             </param>
           </params>
@@ -248,18 +817,25 @@ at runner.JSONRunner.main(JSONRunner.java:108)
         </test-method> <!-- quit -->
       </class> <!-- testcases.rediff.PortfolioManagement -->
       <class name="testcases.rediff.StockManagement">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4099209b]]>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="addNewStock(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="addNewStock" duration-ms="0" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="SKIP" signature="addNewStock(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="addNewStock" duration-ms="0" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skpping as Data Runmode is N]]>
@@ -268,46 +844,48 @@ at runner.JSONRunner.main(JSONRunner.java:108)
               <![CDATA[org.testng.SkipException: Skpping as Data Runmode is N
 at testbase.BaseTest.beforeTest(BaseTest.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
 at runner.TestNGRunner.run(TestNGRunner.java:86)
 at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewStock -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4099209b]]>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="verifyStockPresent()[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="verifyStockPresent" duration-ms="0" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="SKIP" signature="verifyStockPresent()[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="verifyStockPresent" duration-ms="0" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skpping as Data Runmode is N]]>
@@ -316,46 +894,60 @@ at runner.JSONRunner.main(JSONRunner.java:108)
               <![CDATA[org.testng.SkipException: Skpping as Data Runmode is N
 at testbase.BaseTest.beforeTest(BaseTest.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
 at runner.TestNGRunner.run(TestNGRunner.java:86)
 at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStockPresent -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4099209b]]>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="verifyStockQuantity(java.lang.String, org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="verifyStockQuantity" duration-ms="0" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="SKIP" signature="verifyStockQuantity(java.lang.String, org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="verifyStockQuantity" duration-ms="0" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addstock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skpping as Data Runmode is N]]>
@@ -364,46 +956,55 @@ at runner.JSONRunner.main(JSONRunner.java:108)
               <![CDATA[org.testng.SkipException: Skpping as Data Runmode is N
 at testbase.BaseTest.beforeTest(BaseTest.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
 at runner.TestNGRunner.run(TestNGRunner.java:86)
 at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStockQuantity -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4099209b]]>
+                <![CDATA[org.testng.TestRunner@6117b0d0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="verifyTransactionHistory(java.lang.String)[pri:0, instance:testcases.rediff.StockManagement@76f4b65]" name="verifyTransactionHistory" duration-ms="0" started-at="2021-03-13T11:54:12 IST" finished-at="2021-03-13T11:54:12 IST">
+        <test-method status="SKIP" signature="verifyTransactionHistory(java.lang.String)[pri:0, instance:testcases.rediff.StockManagement@428188e7]" name="verifyTransactionHistory" duration-ms="0" started-at="2021-09-21T16:28:48 IST" finished-at="2021-09-21T16:28:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addstock]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skpping as Data Runmode is N]]>
@@ -412,28 +1013,30 @@ at runner.JSONRunner.main(JSONRunner.java:108)
               <![CDATA[org.testng.SkipException: Skpping as Data Runmode is N
 at testbase.BaseTest.beforeTest(BaseTest.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
 at runner.TestNGRunner.run(TestNGRunner.java:86)
 at runner.JSONRunner.main(JSONRunner.java:108)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
